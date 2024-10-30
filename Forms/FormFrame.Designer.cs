@@ -139,6 +139,7 @@
 			this.btn_loaddata.TabIndex = 2;
 			this.btn_loaddata.Text = "OK";
 			this.btn_loaddata.UseVisualStyleBackColor = true;
+			this.btn_loaddata.Click += new System.EventHandler(this.btn_loaddata_Click);
 			// 
 			// FormFrame
 			// 
