@@ -11,7 +11,7 @@ namespace DATN.ClassUtils
 		public List<BeamInfo> beamInfos { get; set; } = new List<BeamInfo>();
 		public DataAnalysis(List<dynamic> data)
 		{
-			var groupname = data.GroupBy(x => x.E);
+			var groupname = data.GroupBy(x => x.E);// group theo giá trị của cột E
 			foreach (var group in groupname)
 			{
 				var name = group.Where(x =>

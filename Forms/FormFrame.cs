@@ -36,15 +36,18 @@ namespace DATN.Forms
 				string[] row = new string[]
 				{   item.Story,
 					item.Name,
-					item.SectionA.M.ToString(),item.SectionA.Q.ToString(),
-					item.SectionB.M.ToString(),item.SectionB.Q.ToString(),
-					item.SectionC.M.ToString(),item.SectionC.Q.ToString()
+					item.SectionA.M.ToString(),
+					item.SectionA.Q.ToString(),
+					item.SectionB.M.ToString(),
+					item.SectionB.Q.ToString(),
+					item.SectionC.M.ToString(),
+					item.SectionC.Q.ToString()
 				};
 				dgv_frames.Rows.Add(row);
 			}
 		}
 
-		private void btn_openpath_Click(object sender, EventArgs e)
+		private void btn_openpath_Click(object sender, EventArgs e)//chọn file để mở
 		{
 			var openFileDialog = new OpenFileDialog();
 			openFileDialog.Filter = "Excel Files|*.xlsx|All Files|*.*";
