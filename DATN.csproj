@@ -60,6 +60,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassUtils\BeamInfo.cs" />
+    <Compile Include="ClassUtils\DataAnalysis.cs" />
+    <Compile Include="ClassUtils\MACBT.cs" />
     <Compile Include="ClassUtils\Section.cs" />
     <Compile Include="FormBeam.cs">
       <SubType>Form</SubType>

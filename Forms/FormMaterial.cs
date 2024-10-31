@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DATN.ClassUtils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,15 @@ namespace DATN.Forms
 		public FormMaterial()
 		{
 			InitializeComponent();
+		}
+
+		private void cbb_macbtong_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			var mac=cbb_macbtong.Text;
+			var b=new MACBT(mac);
+			txt_Rb.Text = b.Rb.ToString();
+			txt_Rbt.Text = b.Rbt.ToString();
+			txt_Rn.Text = b.E.ToString();
 		}
 	}
 }

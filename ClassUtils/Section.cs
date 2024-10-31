@@ -8,8 +8,45 @@ namespace DATN.ClassUtils
 {
 	public class Section
 	{
-		public double M {  get; set; }
-		public double Q {  get; set; }
-		public double N {  get; set; }
+		public double M { get; set; }
+		public double Q { get; set; }
+		public Section(List<dynamic> s)
+		{
+			var m = s.FirstOrDefault(x =>
+			{
+				var mm = Convert.ToString(x.H);
+				if (mm == null) return false;
+				return mm.StartsWith("M");
+			});
+			var q = s.FirstOrDefault(x =>
+			{
+				var mm = Convert.ToString(x.H);
+				if (mm == null) return false;
+				return mm.StartsWith("Q");
+			});
+			List<double> mmax = GetValue(m);
+			List<double> qmax = GetValue(q);
+			if (mmax.Count > 0)
+				M = mmax.Max();
+			if (qmax.Count > 0)
+				Q = qmax.Max();
+		}
+		public List<double> GetValue(dynamic dy)
+		{
+			var result = new List<double>();
+			if (Convert.ToString(dy.N) != "-" && dy.N != null)
+				result.Add(dy.N);
+			if (Convert.ToString(dy.O) != "-" && dy.O != null)
+				result.Add(dy.O);
+			if (Convert.ToString(dy.P) != "-" && dy.P != null)
+				result.Add(dy.P);
+			if (Convert.ToString(dy.Q) != "-" && dy.Q != null)
+				result.Add(dy.Q);
+			if (Convert.ToString(dy.R) != "-" && dy.R != null)
+				result.Add(dy.R);
+			if (Convert.ToString(dy.S) != "-" && dy.S != null)
+				result.Add(dy.S);
+			return result;
+		}
 	}
 }

@@ -29,30 +29,18 @@
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.cbb_macbtong = new System.Windows.Forms.ComboBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.txt_Rb = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.txt_Rbt = new System.Windows.Forms.TextBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
 			this.txt_Rn = new System.Windows.Forms.TextBox();
+			this.txt_Rbt = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.txt_Rb = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.cbb_macbtong = new System.Windows.Forms.ComboBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.txt_Rswchu = new System.Windows.Forms.TextBox();
-			this.txt_Rscchu = new System.Windows.Forms.TextBox();
-			this.label8 = new System.Windows.Forms.Label();
-			this.txt_Rschu = new System.Windows.Forms.TextBox();
-			this.label9 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.cbb_chu = new System.Windows.Forms.ComboBox();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
 			this.txt_Rswdai = new System.Windows.Forms.TextBox();
 			this.txt_Rscdai = new System.Windows.Forms.TextBox();
@@ -65,10 +53,22 @@
 			this.label19 = new System.Windows.Forms.Label();
 			this.label20 = new System.Windows.Forms.Label();
 			this.label21 = new System.Windows.Forms.Label();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.txt_Rswchu = new System.Windows.Forms.TextBox();
+			this.txt_Rscchu = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
+			this.txt_Rschu = new System.Windows.Forms.TextBox();
+			this.label9 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.cbb_chu = new System.Windows.Forms.ComboBox();
+			this.label11 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label13 = new System.Windows.Forms.Label();
+			this.label14 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
-			this.groupBox3.SuspendLayout();
 			this.groupBox4.SuspendLayout();
+			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -92,14 +92,56 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Mác Bê Tông";
 			// 
-			// label1
+			// txt_Rn
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(13, 20);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(27, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Loại";
+			this.txt_Rn.Enabled = false;
+			this.txt_Rn.Location = new System.Drawing.Point(46, 100);
+			this.txt_Rn.Name = "txt_Rn";
+			this.txt_Rn.Size = new System.Drawing.Size(118, 20);
+			this.txt_Rn.TabIndex = 2;
+			// 
+			// txt_Rbt
+			// 
+			this.txt_Rbt.Enabled = false;
+			this.txt_Rbt.Location = new System.Drawing.Point(46, 74);
+			this.txt_Rbt.Name = "txt_Rbt";
+			this.txt_Rbt.Size = new System.Drawing.Size(118, 20);
+			this.txt_Rbt.TabIndex = 2;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(170, 104);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(53, 13);
+			this.label7.TabIndex = 0;
+			this.label7.Text = "(KG/cm2)";
+			// 
+			// txt_Rb
+			// 
+			this.txt_Rb.Enabled = false;
+			this.txt_Rb.Location = new System.Drawing.Point(46, 48);
+			this.txt_Rb.Name = "txt_Rb";
+			this.txt_Rb.Size = new System.Drawing.Size(118, 20);
+			this.txt_Rb.TabIndex = 2;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(170, 78);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(53, 13);
+			this.label5.TabIndex = 0;
+			this.label5.Text = "(KG/cm2)";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(13, 104);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(21, 13);
+			this.label6.TabIndex = 0;
+			this.label6.Text = "Rn";
 			// 
 			// cbb_macbtong
 			// 
@@ -117,32 +159,7 @@
 			this.cbb_macbtong.Size = new System.Drawing.Size(178, 21);
 			this.cbb_macbtong.TabIndex = 1;
 			this.cbb_macbtong.Text = "B25";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(13, 52);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(21, 13);
-			this.label2.TabIndex = 0;
-			this.label2.Text = "Rb";
-			// 
-			// txt_Rb
-			// 
-			this.txt_Rb.Enabled = false;
-			this.txt_Rb.Location = new System.Drawing.Point(46, 48);
-			this.txt_Rb.Name = "txt_Rb";
-			this.txt_Rb.Size = new System.Drawing.Size(118, 20);
-			this.txt_Rb.TabIndex = 2;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(170, 52);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(53, 13);
-			this.label3.TabIndex = 0;
-			this.label3.Text = "(KG/cm2)";
+			this.cbb_macbtong.SelectedIndexChanged += new System.EventHandler(this.cbb_macbtong_SelectedIndexChanged);
 			// 
 			// label4
 			// 
@@ -153,48 +170,32 @@
 			this.label4.TabIndex = 0;
 			this.label4.Text = "Rbt";
 			// 
-			// label5
+			// label3
 			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(170, 78);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(53, 13);
-			this.label5.TabIndex = 0;
-			this.label5.Text = "(KG/cm2)";
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(170, 52);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(53, 13);
+			this.label3.TabIndex = 0;
+			this.label3.Text = "(KG/cm2)";
 			// 
-			// txt_Rbt
+			// label2
 			// 
-			this.txt_Rbt.Enabled = false;
-			this.txt_Rbt.Location = new System.Drawing.Point(46, 74);
-			this.txt_Rbt.Name = "txt_Rbt";
-			this.txt_Rbt.Size = new System.Drawing.Size(118, 20);
-			this.txt_Rbt.TabIndex = 2;
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(13, 52);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(21, 13);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "Rb";
 			// 
-			// label6
+			// label1
 			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(13, 104);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(21, 13);
-			this.label6.TabIndex = 0;
-			this.label6.Text = "Rn";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(170, 104);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(53, 13);
-			this.label7.TabIndex = 0;
-			this.label7.Text = "(KG/cm2)";
-			// 
-			// txt_Rn
-			// 
-			this.txt_Rn.Enabled = false;
-			this.txt_Rn.Location = new System.Drawing.Point(46, 100);
-			this.txt_Rn.Name = "txt_Rn";
-			this.txt_Rn.Size = new System.Drawing.Size(118, 20);
-			this.txt_Rn.TabIndex = 2;
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(13, 20);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(27, 13);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Loại";
 			// 
 			// groupBox2
 			// 
@@ -207,127 +208,6 @@
 			this.groupBox2.TabIndex = 1;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Mác Thép";
-			// 
-			// groupBox3
-			// 
-			this.groupBox3.Controls.Add(this.txt_Rswchu);
-			this.groupBox3.Controls.Add(this.txt_Rscchu);
-			this.groupBox3.Controls.Add(this.label8);
-			this.groupBox3.Controls.Add(this.txt_Rschu);
-			this.groupBox3.Controls.Add(this.label9);
-			this.groupBox3.Controls.Add(this.label10);
-			this.groupBox3.Controls.Add(this.cbb_chu);
-			this.groupBox3.Controls.Add(this.label11);
-			this.groupBox3.Controls.Add(this.label12);
-			this.groupBox3.Controls.Add(this.label13);
-			this.groupBox3.Controls.Add(this.label14);
-			this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
-			this.groupBox3.Location = new System.Drawing.Point(3, 16);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(348, 149);
-			this.groupBox3.TabIndex = 0;
-			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Thép Chủ";
-			// 
-			// txt_Rswchu
-			// 
-			this.txt_Rswchu.Enabled = false;
-			this.txt_Rswchu.Location = new System.Drawing.Point(37, 104);
-			this.txt_Rswchu.Name = "txt_Rswchu";
-			this.txt_Rswchu.Size = new System.Drawing.Size(118, 20);
-			this.txt_Rswchu.TabIndex = 11;
-			// 
-			// txt_Rscchu
-			// 
-			this.txt_Rscchu.Enabled = false;
-			this.txt_Rscchu.Location = new System.Drawing.Point(37, 78);
-			this.txt_Rscchu.Name = "txt_Rscchu";
-			this.txt_Rscchu.Size = new System.Drawing.Size(118, 20);
-			this.txt_Rscchu.TabIndex = 12;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(161, 108);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(53, 13);
-			this.label8.TabIndex = 3;
-			this.label8.Text = "(KG/cm2)";
-			// 
-			// txt_Rschu
-			// 
-			this.txt_Rschu.Enabled = false;
-			this.txt_Rschu.Location = new System.Drawing.Point(37, 52);
-			this.txt_Rschu.Name = "txt_Rschu";
-			this.txt_Rschu.Size = new System.Drawing.Size(118, 20);
-			this.txt_Rschu.TabIndex = 13;
-			// 
-			// label9
-			// 
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(161, 82);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(53, 13);
-			this.label9.TabIndex = 4;
-			this.label9.Text = "(KG/cm2)";
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(4, 108);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(28, 13);
-			this.label10.TabIndex = 5;
-			this.label10.Text = "Rsw";
-			// 
-			// cbb_chu
-			// 
-			this.cbb_chu.FormattingEnabled = true;
-			this.cbb_chu.Items.AddRange(new object[] {
-            "CB300-V",
-            "CB400-V",
-            "CB500-V"});
-			this.cbb_chu.Location = new System.Drawing.Point(37, 21);
-			this.cbb_chu.Name = "cbb_chu";
-			this.cbb_chu.Size = new System.Drawing.Size(178, 21);
-			this.cbb_chu.TabIndex = 10;
-			this.cbb_chu.Text = "CB300-V";
-			// 
-			// label11
-			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(4, 82);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(26, 13);
-			this.label11.TabIndex = 6;
-			this.label11.Text = "Rsc";
-			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Location = new System.Drawing.Point(161, 56);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(53, 13);
-			this.label12.TabIndex = 7;
-			this.label12.Text = "(KG/cm2)";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(4, 56);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(20, 13);
-			this.label13.TabIndex = 8;
-			this.label13.Text = "Rs";
-			// 
-			// label14
-			// 
-			this.label14.AutoSize = true;
-			this.label14.Location = new System.Drawing.Point(4, 24);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(27, 13);
-			this.label14.TabIndex = 9;
-			this.label14.Text = "Loại";
 			// 
 			// groupBox4
 			// 
@@ -450,6 +330,127 @@
 			this.label21.TabIndex = 9;
 			this.label21.Text = "Loại";
 			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.txt_Rswchu);
+			this.groupBox3.Controls.Add(this.txt_Rscchu);
+			this.groupBox3.Controls.Add(this.label8);
+			this.groupBox3.Controls.Add(this.txt_Rschu);
+			this.groupBox3.Controls.Add(this.label9);
+			this.groupBox3.Controls.Add(this.label10);
+			this.groupBox3.Controls.Add(this.cbb_chu);
+			this.groupBox3.Controls.Add(this.label11);
+			this.groupBox3.Controls.Add(this.label12);
+			this.groupBox3.Controls.Add(this.label13);
+			this.groupBox3.Controls.Add(this.label14);
+			this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.groupBox3.Location = new System.Drawing.Point(3, 16);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(348, 149);
+			this.groupBox3.TabIndex = 0;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "Thép Chủ";
+			// 
+			// txt_Rswchu
+			// 
+			this.txt_Rswchu.Enabled = false;
+			this.txt_Rswchu.Location = new System.Drawing.Point(37, 104);
+			this.txt_Rswchu.Name = "txt_Rswchu";
+			this.txt_Rswchu.Size = new System.Drawing.Size(118, 20);
+			this.txt_Rswchu.TabIndex = 11;
+			// 
+			// txt_Rscchu
+			// 
+			this.txt_Rscchu.Enabled = false;
+			this.txt_Rscchu.Location = new System.Drawing.Point(37, 78);
+			this.txt_Rscchu.Name = "txt_Rscchu";
+			this.txt_Rscchu.Size = new System.Drawing.Size(118, 20);
+			this.txt_Rscchu.TabIndex = 12;
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(161, 108);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(53, 13);
+			this.label8.TabIndex = 3;
+			this.label8.Text = "(KG/cm2)";
+			// 
+			// txt_Rschu
+			// 
+			this.txt_Rschu.Enabled = false;
+			this.txt_Rschu.Location = new System.Drawing.Point(37, 52);
+			this.txt_Rschu.Name = "txt_Rschu";
+			this.txt_Rschu.Size = new System.Drawing.Size(118, 20);
+			this.txt_Rschu.TabIndex = 13;
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Location = new System.Drawing.Point(161, 82);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(53, 13);
+			this.label9.TabIndex = 4;
+			this.label9.Text = "(KG/cm2)";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Location = new System.Drawing.Point(4, 108);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(28, 13);
+			this.label10.TabIndex = 5;
+			this.label10.Text = "Rsw";
+			// 
+			// cbb_chu
+			// 
+			this.cbb_chu.FormattingEnabled = true;
+			this.cbb_chu.Items.AddRange(new object[] {
+            "CB300-V",
+            "CB400-V",
+            "CB500-V"});
+			this.cbb_chu.Location = new System.Drawing.Point(37, 21);
+			this.cbb_chu.Name = "cbb_chu";
+			this.cbb_chu.Size = new System.Drawing.Size(178, 21);
+			this.cbb_chu.TabIndex = 10;
+			this.cbb_chu.Text = "CB300-V";
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Location = new System.Drawing.Point(4, 82);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(26, 13);
+			this.label11.TabIndex = 6;
+			this.label11.Text = "Rsc";
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Location = new System.Drawing.Point(161, 56);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(53, 13);
+			this.label12.TabIndex = 7;
+			this.label12.Text = "(KG/cm2)";
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Location = new System.Drawing.Point(4, 56);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(20, 13);
+			this.label13.TabIndex = 8;
+			this.label13.Text = "Rs";
+			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.Location = new System.Drawing.Point(4, 24);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(27, 13);
+			this.label14.TabIndex = 9;
+			this.label14.Text = "Loại";
+			// 
 			// FormMaterial
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -462,10 +463,10 @@
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
-			this.groupBox3.ResumeLayout(false);
-			this.groupBox3.PerformLayout();
 			this.groupBox4.ResumeLayout(false);
 			this.groupBox4.PerformLayout();
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
