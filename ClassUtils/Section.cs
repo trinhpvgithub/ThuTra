@@ -27,9 +27,9 @@ namespace DATN.ClassUtils
 			List<double> mmax = GetValue(m);
 			List<double> qmax = GetValue(q);
 			if (mmax.Count > 0)
-				M = mmax.Max();
+				M = mmax.Max(x=>Math.Abs(x));
 			if (qmax.Count > 0)
-				Q = qmax.Max();
+				Q = qmax.Max(x => Math.Abs(x));
 		}
 		public List<double> GetValue(dynamic dy)
 		{
