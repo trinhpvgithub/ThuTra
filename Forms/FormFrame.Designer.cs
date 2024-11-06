@@ -41,6 +41,9 @@
 			this.txt_path = new System.Windows.Forms.TextBox();
 			this.btn_openpath = new System.Windows.Forms.Button();
 			this.btn_loaddata = new System.Windows.Forms.Button();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txt_path1 = new System.Windows.Forms.TextBox();
+			this.btn_path = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgv_frames)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -48,7 +51,8 @@
 			// 
 			this.dgv_frames.AllowUserToAddRows = false;
 			this.dgv_frames.AllowUserToDeleteRows = false;
-			this.dgv_frames.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+			this.dgv_frames.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.dgv_frames.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgv_frames.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgv_id,
@@ -59,12 +63,11 @@
             this.Column2,
             this.Column3,
             this.Column4});
-			this.dgv_frames.Location = new System.Drawing.Point(20, 39);
-			this.dgv_frames.Margin = new System.Windows.Forms.Padding(4);
+			this.dgv_frames.Location = new System.Drawing.Point(15, 78);
 			this.dgv_frames.Name = "dgv_frames";
 			this.dgv_frames.ReadOnly = true;
 			this.dgv_frames.RowHeadersWidth = 51;
-			this.dgv_frames.Size = new System.Drawing.Size(743, 305);
+			this.dgv_frames.Size = new System.Drawing.Size(557, 248);
 			this.dgv_frames.TabIndex = 3;
 			// 
 			// dgv_id
@@ -134,28 +137,25 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(16, 11);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Location = new System.Drawing.Point(12, 9);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(59, 16);
+			this.label1.Size = new System.Drawing.Size(48, 13);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "File Path";
 			// 
 			// txt_path
 			// 
 			this.txt_path.Enabled = false;
-			this.txt_path.Location = new System.Drawing.Point(88, 7);
-			this.txt_path.Margin = new System.Windows.Forms.Padding(4);
+			this.txt_path.Location = new System.Drawing.Point(66, 6);
 			this.txt_path.Name = "txt_path";
-			this.txt_path.Size = new System.Drawing.Size(411, 22);
+			this.txt_path.Size = new System.Drawing.Size(309, 20);
 			this.txt_path.TabIndex = 1;
 			// 
 			// btn_openpath
 			// 
-			this.btn_openpath.Location = new System.Drawing.Point(508, 7);
-			this.btn_openpath.Margin = new System.Windows.Forms.Padding(4);
+			this.btn_openpath.Location = new System.Drawing.Point(381, 6);
 			this.btn_openpath.Name = "btn_openpath";
-			this.btn_openpath.Size = new System.Drawing.Size(41, 25);
+			this.btn_openpath.Size = new System.Drawing.Size(31, 20);
 			this.btn_openpath.TabIndex = 2;
 			this.btn_openpath.Text = "...";
 			this.btn_openpath.UseVisualStyleBackColor = true;
@@ -163,26 +163,54 @@
 			// 
 			// btn_loaddata
 			// 
-			this.btn_loaddata.Location = new System.Drawing.Point(557, 7);
-			this.btn_loaddata.Margin = new System.Windows.Forms.Padding(4);
+			this.btn_loaddata.Location = new System.Drawing.Point(418, 6);
 			this.btn_loaddata.Name = "btn_loaddata";
-			this.btn_loaddata.Size = new System.Drawing.Size(41, 25);
+			this.btn_loaddata.Size = new System.Drawing.Size(154, 54);
 			this.btn_loaddata.TabIndex = 2;
 			this.btn_loaddata.Text = "OK";
 			this.btn_loaddata.UseVisualStyleBackColor = true;
 			this.btn_loaddata.Click += new System.EventHandler(this.btn_loaddata_Click);
 			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(12, 43);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(48, 13);
+			this.label2.TabIndex = 0;
+			this.label2.Text = "File Path";
+			// 
+			// txt_path1
+			// 
+			this.txt_path1.Enabled = false;
+			this.txt_path1.Location = new System.Drawing.Point(66, 40);
+			this.txt_path1.Name = "txt_path1";
+			this.txt_path1.Size = new System.Drawing.Size(309, 20);
+			this.txt_path1.TabIndex = 1;
+			// 
+			// btn_path
+			// 
+			this.btn_path.Location = new System.Drawing.Point(381, 40);
+			this.btn_path.Name = "btn_path";
+			this.btn_path.Size = new System.Drawing.Size(31, 20);
+			this.btn_path.TabIndex = 2;
+			this.btn_path.Text = "...";
+			this.btn_path.UseVisualStyleBackColor = true;
+			this.btn_path.Click += new System.EventHandler(this.btn_openpath_Click);
+			// 
 			// FormFrame
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(779, 416);
+			this.ClientSize = new System.Drawing.Size(584, 338);
 			this.Controls.Add(this.dgv_frames);
 			this.Controls.Add(this.btn_loaddata);
+			this.Controls.Add(this.btn_path);
 			this.Controls.Add(this.btn_openpath);
+			this.Controls.Add(this.txt_path1);
 			this.Controls.Add(this.txt_path);
+			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FormFrame";
 			this.Text = "FormFrame";
 			((System.ComponentModel.ISupportInitialize)(this.dgv_frames)).EndInit();
@@ -205,5 +233,8 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.TextBox txt_path1;
+		private System.Windows.Forms.Button btn_path;
 	}
 }

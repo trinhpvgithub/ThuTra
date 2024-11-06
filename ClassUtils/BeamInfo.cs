@@ -8,8 +8,11 @@ namespace DATN.ClassUtils
 {
 	public class BeamInfo
 	{
+		public double Width {  get; set; }
+		public double Height {  get; set; }
 		public string Story { get; set; }
 		public string Name { get; set; }
+
 		public Section SectionA { get; set; }
 		public Section SectionB { get; set; }
 		public Section SectionC { get; set; }

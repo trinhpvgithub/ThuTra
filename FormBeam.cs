@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DATN.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,11 @@ namespace DATN
 		private Random random;
 		private int tempIndex;
 		private Form activeForm;
+		public static FormFrame formFrame {  get; set; }
+		public static FormMaterial formMaterial { get; set; }
+		public static FormResult formResult { get; set; }
+		public static FormInformation formInformation { get; set; }
+
 		//Constructor
 		public frm_Beam()
 		{
@@ -131,22 +137,38 @@ namespace DATN
 		
 		private void btn_importbeam_Click(object sender, EventArgs e)
 		{
-			OpenChildForm(new Forms.FormFrame(), sender);
+			if(formFrame==null)
+			{
+				formFrame = new FormFrame();
+			}	
+			OpenChildForm(formFrame, sender);
 		}
 
 		private void btn_material_Click(object sender, EventArgs e)
 		{
-			OpenChildForm(new Forms.FormMaterial(), sender);
+			if(formMaterial ==null)
+			{
+				formMaterial= new FormMaterial();
+			}
+			OpenChildForm(formMaterial, sender);
 		}
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			OpenChildForm(new Forms.FormResult(), sender);
+			if(formResult==null)
+			{
+				formResult = new FormResult();
+			}
+			OpenChildForm(formResult, sender);
 		}
 
 		private void button4_Click(object sender, EventArgs e)
 		{
-			OpenChildForm(new Forms.FormInformation(), sender);
+			if (formInformation == null) 
+			{
+				formInformation = new FormInformation();
+			}
+			OpenChildForm(formInformation, sender);
 		}
 	}
 }

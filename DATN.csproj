@@ -64,6 +64,7 @@
     <Compile Include="ClassUtils\MACBT.cs" />
     <Compile Include="ClassUtils\MACTHEP.cs" />
     <Compile Include="ClassUtils\Section.cs" />
+    <Compile Include="ClassUtils\Tietdien.cs" />
     <Compile Include="FormBeam.cs">
       <SubType>Form</SubType>
     </Compile>

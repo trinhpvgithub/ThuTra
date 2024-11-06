@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DATN.ClassUtils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,14 @@ namespace DATN.Forms
 			InitializeComponent();
 		}
 
+		private void btn_Tinh_Click(object sender, EventArgs e)
+		{
+			var beams = FormFrame.BeamList;
+            foreach (var beam in beams)
+            {
+                //var Result= new Function()
+            }
+        }
 
 	}
 }

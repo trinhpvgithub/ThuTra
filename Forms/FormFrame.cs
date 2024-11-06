@@ -21,8 +21,12 @@ namespace DATN.Forms
 			InitializeComponent();
 		}
 		public string Path;
+		public string PathTT;
+		public static List<BeamInfo> BeamList {  get; set; }= new List<BeamInfo>();
 		private void btn_loaddata_Click(object sender, EventArgs e)
 		{
+			var tt=MiniExcel.Query<Tietdien>(PathTT);
+			var data = tt.Where(x => x.LineType.Equals("Beam")).GroupBy(x=>x.Line).ToList();
 			var path = Path;
 			var config = new OpenXmlConfiguration()
 			{
@@ -45,7 +49,14 @@ namespace DATN.Forms
 				};
 				dgv_frames.Rows.Add(row);
 			}
-		}
+            foreach (var beam in c)
+            {
+				var TTT = data.FirstOrDefault(x => x.Equals(beam.Name));
+				beam.Width = Split(TTT.FirstOrDefault().AnalysisSect, false);
+				beam.Height = Split(TTT.FirstOrDefault().AnalysisSect);
+				BeamList.Add(beam);
+			}
+        }
 
 		private void btn_openpath_Click(object sender, EventArgs e)//chọn file để mở
 		{
@@ -58,6 +69,20 @@ namespace DATN.Forms
 				Path = openFileDialog.FileName;
 			}
 			txt_path.Text = Path;
+		}
+		private double Split(string data,bool c=true)
+		{
+			double result = 0;
+			string[] kq= data.Split('X');
+			if(c)
+			{
+				result = Convert.ToDouble(kq.LastOrDefault()) * 10;
+			}
+			else
+			{
+				result = Convert.ToDouble(kq.FirstOrDefault().Remove(0)) * 10;
+			}
+			return result;
 		}
 	}
 }
