@@ -196,7 +196,7 @@
 			this.btn_path.TabIndex = 2;
 			this.btn_path.Text = "...";
 			this.btn_path.UseVisualStyleBackColor = true;
-			this.btn_path.Click += new System.EventHandler(this.btn_openpath_Click);
+			this.btn_path.Click += new System.EventHandler(this.btn_path_Click);
 			// 
 			// FormFrame
 			// 

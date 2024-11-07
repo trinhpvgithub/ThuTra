@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="ClassUtils\BeamInfo.cs" />
     <Compile Include="ClassUtils\DataAnalysis.cs" />
+    <Compile Include="ClassUtils\FunctionTinh.cs" />
     <Compile Include="ClassUtils\MACBT.cs" />
     <Compile Include="ClassUtils\MACTHEP.cs" />
     <Compile Include="ClassUtils\Section.cs" />

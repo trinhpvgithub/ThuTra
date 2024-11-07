@@ -51,7 +51,7 @@ namespace DATN.Forms
 			}
             foreach (var beam in c)
             {
-				var TTT = data.FirstOrDefault(x => x.Equals(beam.Name));
+				var TTT = data.FirstOrDefault(x => x.Key.Equals(beam.Name));
 				beam.Width = Split(TTT.FirstOrDefault().AnalysisSect, false);
 				beam.Height = Split(TTT.FirstOrDefault().AnalysisSect);
 				BeamList.Add(beam);
@@ -80,9 +80,22 @@ namespace DATN.Forms
 			}
 			else
 			{
-				result = Convert.ToDouble(kq.FirstOrDefault().Remove(0)) * 10;
+				result = Convert.ToDouble(kq.FirstOrDefault().Substring(1)) * 10;
 			}
 			return result;
+		}
+
+		private void btn_path_Click(object sender, EventArgs e)
+		{
+			var openFileDialog = new OpenFileDialog();
+			openFileDialog.Filter = "Excel Files|*.xlsx|All Files|*.*";
+			openFileDialog.Multiselect = false; // Đặt thành true để cho phép chọn nhiều tệp
+			if (openFileDialog.ShowDialog() == DialogResult.OK)
+			{
+				// Lấy đường dẫn của tệp được chọn
+				PathTT = openFileDialog.FileName;
+			}
+			txt_path1.Text = PathTT;
 		}
 	}
 }
