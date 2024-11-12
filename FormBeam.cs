@@ -23,6 +23,7 @@ namespace DATN
 		public static FormMaterial formMaterial { get; set; }
 		public static FormResult formResult { get; set; }
 		public static FormInformation formInformation { get; set; }
+		public static FormBoTri formBoTri { get; set; }
 
 		//Constructor
 		public frm_Beam()
@@ -85,7 +86,7 @@ namespace DATN
 		private void OpenChildForm(Form childForm, object btnSender)
 		{
 			if (activeForm != null)
-				activeForm.Close();
+				activeForm.Hide();
 			ActivateButton(btnSender);
 			activeForm = childForm;
 			childForm.TopLevel = false;
@@ -164,7 +165,16 @@ namespace DATN
 
 		private void button4_Click(object sender, EventArgs e)
 		{
-			if (formInformation == null) 
+			if (formBoTri == null)
+			{
+				formBoTri = new FormBoTri();
+			}
+			OpenChildForm(formBoTri, sender);
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			if (formInformation == null)
 			{
 				formInformation = new FormInformation();
 			}
