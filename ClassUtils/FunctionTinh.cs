@@ -9,9 +9,9 @@ namespace DATN.ClassUtils
 {
 	public class FunctionTinh
 	{
-		public double h {  get; set; }
-		public double a {  get; set; }
-		public double hf {  get; set; }
+		public double h { get; set; }
+		public double a { get; set; }
+		public double hf { get; set; }
 		public double b { get; set; }
 		public double bf { get; set; }
 		public double L { get; set; }
@@ -20,30 +20,30 @@ namespace DATN.ClassUtils
 		public double Ma { get; set; }
 		public double Mb { get; set; }
 		public double Mc { get; set; }
-		public double AsA {  get; set; }
+		public double AsA { get; set; }
 		public double AsB { get; set; }
-		public double AsC {  get; set; }
-		public FunctionTinh(double height,double cover,double hs,double width,double length,double Rbb,double Rss,double Maa,double Mbb,double Mcc) 
+		public double AsC { get; set; }
+		public FunctionTinh(double height, double cover, double hs, double width, double length, double Rbb, double Rss, double Maa, double Mbb, double Mcc)
 		{
-			h=height;
-			a=cover;
-			hf=hs;
-			b=width;
-			L=length;
-			Rb=Rbb;
-			Rs=Rss;
-			Ma=Maa;
-			Mb=Mbb;
-			Mc=Mcc;
+			h = height;
+			a = cover;
+			hf = hs;
+			b = width;
+			L = length;
+			Rb = Rbb;
+			Rs = Rss;
+			Ma = Maa * 10000;
+			Mb = Mbb * 10000;
+			Mc = Mcc * 10000;
 			Run();
 		}
 		private void Run()
 		{
 			double h0 = h - a;
-			var Mmax=new List<double>() { Ma,Mb,Mc};
+			var Mmax = new List<double>() { Ma, Mb, Mc };
 			List<double> Ass = new List<double>();
-            foreach (var M in Mmax)
-            {
+			foreach (var M in Mmax)
+			{
 				double As = 0;
 				if (M < 0)
 				{
@@ -63,24 +63,39 @@ namespace DATN.ClassUtils
 					}
 				}
 				Ass.Add(As);
-            }
-			AsA = Ass[0];
-			AsB = Ass[1];
-			AsC = Ass[2];
+			}
+			AsA = Ass[0] / 100;
+			AsB = Ass[1] / 100;
+			AsC = Ass[2] / 100;
 		}
 		private double DoVuonCanh()
 		{
 			if (hf >= 0.1 * h)
 			{
-				double res = L / 6;   
+				double res = L / 6;
+				if (Math.Floor(res / 10) == 0)
+				{
+					return res;
+				}
+				else
+				{
 
-				return Math.Floor(res / 10) * 10;
+					return Math.Floor(res / 10) * 10;
+				}
 			}
 			else
 			{
 				double res = Math.Min(L / 6, 6 * hf);
 
-				return Math.Floor(res / 10) * 10;
+				if (Math.Floor(res / 10) == 0)
+				{
+					return res;
+				}
+				else
+				{
+
+					return Math.Floor(res / 10) * 10;
+				}
 			}
 		}
 

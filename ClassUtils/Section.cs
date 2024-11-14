@@ -10,7 +10,7 @@ namespace DATN.ClassUtils
 	{
 		public double M { get; set; }
 		public double Q { get; set; }
-		public Section(List<dynamic> s)
+		public Section(List<dynamic> s,bool c=true)
 		{
 			var m = s.FirstOrDefault(x =>
 			{
@@ -27,7 +27,13 @@ namespace DATN.ClassUtils
 			List<double> mmax = GetValue(m);
 			List<double> qmax = GetValue(q);
 			if (mmax.Count > 0)
-				M = mmax.Max(x=>Math.Abs(x));
+			{
+				if(c)
+				{
+					M = -mmax.Max(x=>Math.Abs(x));
+				}	
+				else M = -mmax.Max(x => Math.Abs(x));
+			}	
 			if (qmax.Count > 0)
 				Q = qmax.Max(x => Math.Abs(x));
 		}

@@ -36,7 +36,7 @@ namespace DATN.ClassUtils
 				return s.Equals("1L");
 			});
 			SectionA = new Section(sectionA.ToList());
-			SectionB = new Section(sectionB.ToList());
+			SectionB = new Section(sectionB.ToList(),false);
 			SectionC = new Section(sectionC.ToList());
 
 

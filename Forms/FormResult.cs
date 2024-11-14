@@ -17,10 +17,9 @@ namespace DATN.Forms
 		{
 			InitializeComponent();
 		}
-
+		public static List<string[]>Beam {  get; set; } = new List<string[]>();
 		private void btn_Tinh_Click(object sender, EventArgs e)
 		{
-			
 			var a=Convert.ToDouble(txt_a.Text);
 			var hf=Convert.ToDouble(txt_hf.Text);
 			var beams = FormFrame.BeamList;
@@ -28,16 +27,17 @@ namespace DATN.Forms
 			var THEP=FormMaterial.MACTHEPCHINH;
             foreach (var beam in beams)
             {
-				var Result = new FunctionTinh(beam.Height, a, hf, beam.Width, 8000, BT.Rb, THEP.Rs, beam.SectionA.M, beam.SectionB.M, beam.SectionC.M);
+				var Result = new FunctionTinh(beam.Height, a, hf, beam.Width, 8, BT.Rb, THEP.Rs, beam.SectionA.M, beam.SectionB.M, beam.SectionC.M);
 				string[] beamresult = new string[]
 				{
 					beam.Story,
 					beam.Name,
-					Result.AsA.ToString(),
-					Result.AsB.ToString(),
-					Result.AsC.ToString(),
+					Math.Round( Result.AsA,4).ToString(),
+					Math.Round( Result.AsB,4).ToString(),
+					Math.Round( Result.AsC,4).ToString(),
 				};
 				dgv_result.Rows.Add(beamresult);
+				Beam.Add(beamresult);
 			}
         }
 	}
