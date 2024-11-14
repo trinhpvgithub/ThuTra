@@ -24,6 +24,7 @@ namespace DATN
 		public static FormResult formResult { get; set; }
 		public static FormInformation formInformation { get; set; }
 		public static FormBoTri formBoTri { get; set; }
+		public static FormBanVe formBanVe { get; set; }
 
 		//Constructor
 		public frm_Beam()
@@ -179,6 +180,15 @@ namespace DATN
 				formInformation = new FormInformation();
 			}
 			OpenChildForm(formInformation, sender);
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			if (formBanVe == null)
+			{
+				formBanVe = new FormBanVe();
+			}
+			OpenChildForm(formBanVe, sender);
 		}
 	}
 }

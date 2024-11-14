@@ -86,9 +86,9 @@
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.groupBox1.Location = new System.Drawing.Point(0, 0);
-			this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
 			this.groupBox1.Size = new System.Drawing.Size(307, 416);
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
@@ -98,7 +98,7 @@
 			// 
 			this.txt_Rn.Enabled = false;
 			this.txt_Rn.Location = new System.Drawing.Point(61, 123);
-			this.txt_Rn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rn.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rn.Name = "txt_Rn";
 			this.txt_Rn.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rn.TabIndex = 2;
@@ -107,7 +107,7 @@
 			// 
 			this.txt_Rbt.Enabled = false;
 			this.txt_Rbt.Location = new System.Drawing.Point(61, 91);
-			this.txt_Rbt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rbt.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rbt.Name = "txt_Rbt";
 			this.txt_Rbt.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rbt.TabIndex = 2;
@@ -118,7 +118,7 @@
 			this.label7.Location = new System.Drawing.Point(227, 128);
 			this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(62, 16);
+			this.label7.Size = new System.Drawing.Size(68, 17);
 			this.label7.TabIndex = 0;
 			this.label7.Text = "(KG/cm2)";
 			// 
@@ -126,7 +126,7 @@
 			// 
 			this.txt_Rb.Enabled = false;
 			this.txt_Rb.Location = new System.Drawing.Point(61, 59);
-			this.txt_Rb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rb.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rb.Name = "txt_Rb";
 			this.txt_Rb.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rb.TabIndex = 2;
@@ -137,7 +137,7 @@
 			this.label5.Location = new System.Drawing.Point(227, 96);
 			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(62, 16);
+			this.label5.Size = new System.Drawing.Size(68, 17);
 			this.label5.TabIndex = 0;
 			this.label5.Text = "(KG/cm2)";
 			// 
@@ -147,7 +147,7 @@
 			this.label6.Location = new System.Drawing.Point(17, 128);
 			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(24, 16);
+			this.label6.Size = new System.Drawing.Size(26, 17);
 			this.label6.TabIndex = 0;
 			this.label6.Text = "Rn";
 			// 
@@ -163,7 +163,7 @@
             "B35",
             "B40"});
 			this.cbb_macbtong.Location = new System.Drawing.Point(61, 21);
-			this.cbb_macbtong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbb_macbtong.Margin = new System.Windows.Forms.Padding(4);
 			this.cbb_macbtong.Name = "cbb_macbtong";
 			this.cbb_macbtong.Size = new System.Drawing.Size(236, 24);
 			this.cbb_macbtong.TabIndex = 1;
@@ -176,7 +176,7 @@
 			this.label4.Location = new System.Drawing.Point(17, 96);
 			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(28, 16);
+			this.label4.Size = new System.Drawing.Size(30, 17);
 			this.label4.TabIndex = 0;
 			this.label4.Text = "Rbt";
 			// 
@@ -186,7 +186,7 @@
 			this.label3.Location = new System.Drawing.Point(227, 64);
 			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(62, 16);
+			this.label3.Size = new System.Drawing.Size(68, 17);
 			this.label3.TabIndex = 0;
 			this.label3.Text = "(KG/cm2)";
 			// 
@@ -196,7 +196,7 @@
 			this.label2.Location = new System.Drawing.Point(17, 64);
 			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(25, 16);
+			this.label2.Size = new System.Drawing.Size(26, 17);
 			this.label2.TabIndex = 0;
 			this.label2.Text = "Rb";
 			// 
@@ -206,7 +206,7 @@
 			this.label1.Location = new System.Drawing.Point(17, 25);
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(33, 16);
+			this.label1.Size = new System.Drawing.Size(35, 17);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Loại";
 			// 
@@ -216,9 +216,9 @@
 			this.groupBox2.Controls.Add(this.groupBox3);
 			this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.groupBox2.Location = new System.Drawing.Point(307, 0);
-			this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
 			this.groupBox2.Size = new System.Drawing.Size(472, 416);
 			this.groupBox2.TabIndex = 1;
 			this.groupBox2.TabStop = false;
@@ -239,9 +239,9 @@
 			this.groupBox4.Controls.Add(this.label21);
 			this.groupBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.groupBox4.Location = new System.Drawing.Point(4, 210);
-			this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
 			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
 			this.groupBox4.Size = new System.Drawing.Size(464, 202);
 			this.groupBox4.TabIndex = 1;
 			this.groupBox4.TabStop = false;
@@ -251,7 +251,7 @@
 			// 
 			this.txt_Rswdai.Enabled = false;
 			this.txt_Rswdai.Location = new System.Drawing.Point(49, 128);
-			this.txt_Rswdai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rswdai.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rswdai.Name = "txt_Rswdai";
 			this.txt_Rswdai.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rswdai.TabIndex = 11;
@@ -260,7 +260,7 @@
 			// 
 			this.txt_Rscdai.Enabled = false;
 			this.txt_Rscdai.Location = new System.Drawing.Point(49, 96);
-			this.txt_Rscdai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rscdai.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rscdai.Name = "txt_Rscdai";
 			this.txt_Rscdai.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rscdai.TabIndex = 12;
@@ -271,7 +271,7 @@
 			this.label15.Location = new System.Drawing.Point(215, 133);
 			this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(62, 16);
+			this.label15.Size = new System.Drawing.Size(68, 17);
 			this.label15.TabIndex = 3;
 			this.label15.Text = "(KG/cm2)";
 			// 
@@ -279,7 +279,7 @@
 			// 
 			this.txt_Rsdai.Enabled = false;
 			this.txt_Rsdai.Location = new System.Drawing.Point(49, 64);
-			this.txt_Rsdai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rsdai.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rsdai.Name = "txt_Rsdai";
 			this.txt_Rsdai.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rsdai.TabIndex = 13;
@@ -290,7 +290,7 @@
 			this.label16.Location = new System.Drawing.Point(215, 101);
 			this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(62, 16);
+			this.label16.Size = new System.Drawing.Size(68, 17);
 			this.label16.TabIndex = 4;
 			this.label16.Text = "(KG/cm2)";
 			// 
@@ -300,7 +300,7 @@
 			this.label17.Location = new System.Drawing.Point(5, 133);
 			this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(33, 16);
+			this.label17.Size = new System.Drawing.Size(34, 17);
 			this.label17.TabIndex = 5;
 			this.label17.Text = "Rsw";
 			// 
@@ -313,7 +313,7 @@
             "CB400-V",
             "CB500-V"});
 			this.cbb_dai.Location = new System.Drawing.Point(49, 26);
-			this.cbb_dai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbb_dai.Margin = new System.Windows.Forms.Padding(4);
 			this.cbb_dai.Name = "cbb_dai";
 			this.cbb_dai.Size = new System.Drawing.Size(236, 24);
 			this.cbb_dai.TabIndex = 10;
@@ -326,7 +326,7 @@
 			this.label18.Location = new System.Drawing.Point(5, 101);
 			this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label18.Name = "label18";
-			this.label18.Size = new System.Drawing.Size(31, 16);
+			this.label18.Size = new System.Drawing.Size(32, 17);
 			this.label18.TabIndex = 6;
 			this.label18.Text = "Rsc";
 			// 
@@ -336,7 +336,7 @@
 			this.label19.Location = new System.Drawing.Point(215, 69);
 			this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(62, 16);
+			this.label19.Size = new System.Drawing.Size(68, 17);
 			this.label19.TabIndex = 7;
 			this.label19.Text = "(KG/cm2)";
 			// 
@@ -346,7 +346,7 @@
 			this.label20.Location = new System.Drawing.Point(5, 69);
 			this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(24, 16);
+			this.label20.Size = new System.Drawing.Size(25, 17);
 			this.label20.TabIndex = 8;
 			this.label20.Text = "Rs";
 			// 
@@ -356,7 +356,7 @@
 			this.label21.Location = new System.Drawing.Point(5, 30);
 			this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label21.Name = "label21";
-			this.label21.Size = new System.Drawing.Size(33, 16);
+			this.label21.Size = new System.Drawing.Size(35, 17);
 			this.label21.TabIndex = 9;
 			this.label21.Text = "Loại";
 			// 
@@ -375,9 +375,9 @@
 			this.groupBox3.Controls.Add(this.label14);
 			this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
 			this.groupBox3.Location = new System.Drawing.Point(4, 19);
-			this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
 			this.groupBox3.Size = new System.Drawing.Size(464, 183);
 			this.groupBox3.TabIndex = 0;
 			this.groupBox3.TabStop = false;
@@ -387,7 +387,7 @@
 			// 
 			this.txt_Rswchu.Enabled = false;
 			this.txt_Rswchu.Location = new System.Drawing.Point(49, 128);
-			this.txt_Rswchu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rswchu.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rswchu.Name = "txt_Rswchu";
 			this.txt_Rswchu.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rswchu.TabIndex = 11;
@@ -396,7 +396,7 @@
 			// 
 			this.txt_Rscchu.Enabled = false;
 			this.txt_Rscchu.Location = new System.Drawing.Point(49, 96);
-			this.txt_Rscchu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rscchu.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rscchu.Name = "txt_Rscchu";
 			this.txt_Rscchu.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rscchu.TabIndex = 12;
@@ -407,7 +407,7 @@
 			this.label8.Location = new System.Drawing.Point(215, 133);
 			this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(62, 16);
+			this.label8.Size = new System.Drawing.Size(68, 17);
 			this.label8.TabIndex = 3;
 			this.label8.Text = "(KG/cm2)";
 			// 
@@ -415,7 +415,7 @@
 			// 
 			this.txt_Rschu.Enabled = false;
 			this.txt_Rschu.Location = new System.Drawing.Point(49, 64);
-			this.txt_Rschu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txt_Rschu.Margin = new System.Windows.Forms.Padding(4);
 			this.txt_Rschu.Name = "txt_Rschu";
 			this.txt_Rschu.Size = new System.Drawing.Size(156, 22);
 			this.txt_Rschu.TabIndex = 13;
@@ -426,7 +426,7 @@
 			this.label9.Location = new System.Drawing.Point(215, 101);
 			this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(62, 16);
+			this.label9.Size = new System.Drawing.Size(68, 17);
 			this.label9.TabIndex = 4;
 			this.label9.Text = "(KG/cm2)";
 			// 
@@ -436,7 +436,7 @@
 			this.label10.Location = new System.Drawing.Point(5, 133);
 			this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(33, 16);
+			this.label10.Size = new System.Drawing.Size(34, 17);
 			this.label10.TabIndex = 5;
 			this.label10.Text = "Rsw";
 			// 
@@ -448,7 +448,7 @@
             "CB400-V",
             "CB500-V"});
 			this.cbb_chu.Location = new System.Drawing.Point(49, 26);
-			this.cbb_chu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbb_chu.Margin = new System.Windows.Forms.Padding(4);
 			this.cbb_chu.Name = "cbb_chu";
 			this.cbb_chu.Size = new System.Drawing.Size(236, 24);
 			this.cbb_chu.TabIndex = 10;
@@ -461,7 +461,7 @@
 			this.label11.Location = new System.Drawing.Point(5, 101);
 			this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(31, 16);
+			this.label11.Size = new System.Drawing.Size(32, 17);
 			this.label11.TabIndex = 6;
 			this.label11.Text = "Rsc";
 			// 
@@ -471,7 +471,7 @@
 			this.label12.Location = new System.Drawing.Point(215, 69);
 			this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(62, 16);
+			this.label12.Size = new System.Drawing.Size(68, 17);
 			this.label12.TabIndex = 7;
 			this.label12.Text = "(KG/cm2)";
 			// 
@@ -481,7 +481,7 @@
 			this.label13.Location = new System.Drawing.Point(5, 69);
 			this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(24, 16);
+			this.label13.Size = new System.Drawing.Size(25, 17);
 			this.label13.TabIndex = 8;
 			this.label13.Text = "Rs";
 			// 
@@ -491,7 +491,7 @@
 			this.label14.Location = new System.Drawing.Point(5, 30);
 			this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(33, 16);
+			this.label14.Size = new System.Drawing.Size(35, 17);
 			this.label14.TabIndex = 9;
 			this.label14.Text = "Loại";
 			// 
@@ -502,9 +502,10 @@
 			this.ClientSize = new System.Drawing.Size(779, 416);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FormMaterial";
 			this.Text = "FormMaterial";
+			this.Load += new System.EventHandler(this.FormMaterial_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);

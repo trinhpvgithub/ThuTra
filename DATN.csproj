@@ -78,6 +78,12 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormBanVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBanVe.Designer.cs">
+      <DependentUpon>FormBanVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormBoTri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBanVe.resx">
+      <DependentUpon>FormBanVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormBoTri.resx">
       <DependentUpon>FormBoTri.cs</DependentUpon>
@@ -192,14 +201,6 @@
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
     </COMReference>
-    <COMReference Include="AxVDStdLib5">
-      <Guid>{CF8CE0FC-B461-4F49-9B07-95CF36579963}</Guid>
-      <VersionMajor>5</VersionMajor>
-      <VersionMinor>1</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
     <COMReference Include="stdole">
       <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>2</VersionMajor>
@@ -218,15 +219,10 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-    <COMReference Include="VDStdLib5">
-      <Guid>{CF8CE0FC-B461-4F49-9B07-95CF36579963}</Guid>
-      <VersionMajor>5</VersionMajor>
-      <VersionMinor>1</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MC.png" />
+    <None Include="Resources\MC1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

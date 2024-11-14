@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DATN.ClassUtils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,7 @@ namespace DATN.Forms
 			}
 		}
 		public int index_tinh = -1;
+		public static List<BeamInfo> beams = FormFrame.BeamList;
 		private void btn_kt_Click(object sender, EventArgs e)
 		{
 			if (index_tinh == -1) return;
@@ -51,16 +53,16 @@ namespace DATN.Forms
 			}
 			if (KtA >= goiA)
 			{
-				lb_A.Text = "Kết Luận: " + "Thỏa mãn!";
+				lb_A.Text = "V";
 				lb_A.ForeColor = Color.Green;
-				lb_C.Text = "Kết Luận: " + "Thỏa mãn!";
+				lb_C.Text = "V";
 				lb_C.ForeColor = Color.Green;
 			}
 			else
 			{
-				lb_A.Text = "Kết Luận: " + "Không thỏa mãn, vui lòng chọn lại!";
+				lb_A.Text = "X";
 				lb_A.ForeColor = Color.Red;
-				lb_C.Text = "Kết Luận: " + "Không thỏa mãn, vui lòng chọn lại!";
+				lb_C.Text = "X";
 				lb_C.ForeColor = Color.Red;
 			}
 
@@ -79,12 +81,12 @@ namespace DATN.Forms
 			}
 			if (KtB >= nhipB)
 			{
-				lb_B.Text = "Kết Luận: " + "Thỏa mãn!";
+				lb_B.Text = "V";
 				lb_B.ForeColor = Color.Green;
 			}
 			else
 			{
-				lb_B.Text = "Kết Luận: " + "Không thỏa mãn, vui lòng chọn lại!";
+				lb_B.Text = "V";
 				lb_B.ForeColor = Color.Red;
 			}
 
@@ -150,7 +152,79 @@ namespace DATN.Forms
 					result = 1256.6 * soluong;
 					break;
 			}
-			return result;
+			return result/100;
+		}
+
+
+		private void dgv_thep_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			index_tinh = e.RowIndex;
+			if (index_tinh == -1) return;
+			txt_goiA.Text = dgv_thep.Rows[index_tinh].Cells[2].Value.ToString();
+			txt_nhipB.Text = dgv_thep.Rows[index_tinh].Cells[3].Value.ToString();
+			txt_goiC.Text = dgv_thep.Rows[index_tinh].Cells[4].Value.ToString();
+		}
+
+		private void btn_luu_Click(object sender, EventArgs e)
+		{
+			if (index_tinh != -1)
+			{
+				if (cb_1.Checked)
+				{
+					beams[index_tinh].t1 = cbb_1.Text + cbb_t1.Text;
+				}
+				else
+					beams[index_tinh].t1 = "";
+				if (cb2.Checked)
+				{
+					beams[index_tinh].t2 = cbb_2.Text + cbb_t2.Text;
+				}
+				else
+					beams[index_tinh].t2 = "";
+				if (cb3.Checked)
+				{
+					beams[index_tinh].t3 = cbb_3.Text + cbb_t3.Text;
+				}
+				else
+					beams[index_tinh].t3 = "";
+				if (cb4.Checked)
+				{
+					beams[index_tinh].t4 = cbb_4.Text + cbb_t4.Text;
+				}
+				else
+					beams[index_tinh].t4 = "";
+				if (cb5.Checked)
+				{
+					beams[index_tinh].t5 = cbb_5.Text + cbb_t5.Text;
+				}
+				else
+					beams[index_tinh].t5 = "";
+				if (cb6.Checked)
+				{
+					beams[index_tinh].t6 = cbb_6.Text + cbb_t6.Text;
+				}
+				else
+					beams[index_tinh].t6 = "";
+				if (cb7.Checked)
+				{
+					beams[index_tinh].t7 = cbb_7.Text + cbb_t7.Text;
+				}
+				else
+					beams[index_tinh].t7 = "";
+				if (cb8.Checked)
+				{
+					beams[index_tinh].t8 = cbb_8.Text + cbb_t8.Text;
+				}
+				else
+					beams[index_tinh].t8 = "";
+				if (cb9.Checked)
+				{
+					beams[index_tinh].t9 = cbb_9.Text + cbb_t9.Text;
+				}
+				else
+					beams[index_tinh].t9 = "";
+				MessageBox.Show("Dữ liệu thép đã được lưu");
+			}
 		}
 	}
 }

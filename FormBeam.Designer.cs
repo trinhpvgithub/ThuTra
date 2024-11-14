@@ -40,7 +40,7 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.panelDesktopPane = new System.Windows.Forms.Panel();
-			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
 			this.panelMenu.SuspendLayout();
 			this.panelLogo.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,7 +50,7 @@
 			// panelMenu
 			// 
 			this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-			this.panelMenu.Controls.Add(this.button1);
+			this.panelMenu.Controls.Add(this.button2);
 			this.panelMenu.Controls.Add(this.button4);
 			this.panelMenu.Controls.Add(this.button3);
 			this.panelMenu.Controls.Add(this.btn_material);
@@ -58,7 +58,7 @@
 			this.panelMenu.Controls.Add(this.panelLogo);
 			this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
 			this.panelMenu.Location = new System.Drawing.Point(0, 0);
-			this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
 			this.panelMenu.Name = "panelMenu";
 			this.panelMenu.Size = new System.Drawing.Size(267, 554);
 			this.panelMenu.TabIndex = 0;
@@ -72,7 +72,7 @@
 			this.button4.Image = global::DATN.Properties.Resources.info;
 			this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button4.Location = new System.Drawing.Point(0, 312);
-			this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.button4.Margin = new System.Windows.Forms.Padding(4);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(267, 74);
 			this.button4.TabIndex = 4;
@@ -91,7 +91,7 @@
 			this.button3.Image = global::DATN.Properties.Resources.Result;
 			this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.button3.Location = new System.Drawing.Point(0, 238);
-			this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.button3.Margin = new System.Windows.Forms.Padding(4);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(267, 74);
 			this.button3.TabIndex = 3;
@@ -110,7 +110,7 @@
 			this.btn_material.Image = global::DATN.Properties.Resources.Material;
 			this.btn_material.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_material.Location = new System.Drawing.Point(0, 164);
-			this.btn_material.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btn_material.Margin = new System.Windows.Forms.Padding(4);
 			this.btn_material.Name = "btn_material";
 			this.btn_material.Size = new System.Drawing.Size(267, 74);
 			this.btn_material.TabIndex = 2;
@@ -129,7 +129,7 @@
 			this.btn_importbeam.Image = global::DATN.Properties.Resources.steel_beam;
 			this.btn_importbeam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_importbeam.Location = new System.Drawing.Point(0, 90);
-			this.btn_importbeam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btn_importbeam.Margin = new System.Windows.Forms.Padding(4);
 			this.btn_importbeam.Name = "btn_importbeam";
 			this.btn_importbeam.Size = new System.Drawing.Size(267, 74);
 			this.btn_importbeam.TabIndex = 1;
@@ -146,7 +146,7 @@
 			this.panelLogo.Controls.Add(this.label1);
 			this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panelLogo.Location = new System.Drawing.Point(0, 0);
-			this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
 			this.panelLogo.Name = "panelLogo";
 			this.panelLogo.Size = new System.Drawing.Size(267, 90);
 			this.panelLogo.TabIndex = 0;
@@ -156,7 +156,7 @@
 			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
 			this.pictureBox1.Image = global::DATN.Properties.Resources._1200px_LOGO_DHXD;
 			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(93, 90);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,7 +181,7 @@
 			this.panelTitleBar.Controls.Add(this.label2);
 			this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
 			this.panelTitleBar.Location = new System.Drawing.Point(267, 0);
-			this.panelTitleBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelTitleBar.Margin = new System.Windows.Forms.Padding(4);
 			this.panelTitleBar.Name = "panelTitleBar";
 			this.panelTitleBar.Size = new System.Drawing.Size(800, 90);
 			this.panelTitleBar.TabIndex = 1;
@@ -214,29 +214,29 @@
 			// 
 			this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panelDesktopPane.Location = new System.Drawing.Point(267, 90);
-			this.panelDesktopPane.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelDesktopPane.Margin = new System.Windows.Forms.Padding(4);
 			this.panelDesktopPane.Name = "panelDesktopPane";
 			this.panelDesktopPane.Size = new System.Drawing.Size(800, 464);
 			this.panelDesktopPane.TabIndex = 2;
 			// 
-			// button1
+			// button2
 			// 
-			this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.button1.FlatAppearance.BorderSize = 0;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Image = global::DATN.Properties.Resources.info;
-			this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button1.Location = new System.Drawing.Point(0, 386);
-			this.button1.Margin = new System.Windows.Forms.Padding(4);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(267, 74);
-			this.button1.TabIndex = 5;
-			this.button1.Text = "Infomation";
-			this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+			this.button2.FlatAppearance.BorderSize = 0;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.ForeColor = System.Drawing.Color.White;
+			this.button2.Image = global::DATN.Properties.Resources.info;
+			this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.button2.Location = new System.Drawing.Point(0, 386);
+			this.button2.Margin = new System.Windows.Forms.Padding(4);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(267, 74);
+			this.button2.TabIndex = 6;
+			this.button2.Text = "Bản vẽ";
+			this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// frm_Beam
 			// 
@@ -247,8 +247,9 @@
 			this.Controls.Add(this.panelDesktopPane);
 			this.Controls.Add(this.panelTitleBar);
 			this.Controls.Add(this.panelMenu);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "frm_Beam";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FormBeam";
 			this.panelMenu.ResumeLayout(false);
 			this.panelLogo.ResumeLayout(false);
@@ -274,6 +275,6 @@
 		private System.Windows.Forms.Button btn_material;
 		private System.Windows.Forms.Panel panelDesktopPane;
 		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button button2;
 	}
 }

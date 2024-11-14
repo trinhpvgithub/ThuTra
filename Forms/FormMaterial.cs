@@ -17,7 +17,6 @@ namespace DATN.Forms
 		public FormMaterial()
 		{
 			InitializeComponent();
-			LoadData();
 		}
 		public static MACBT MACBT {  get; set; }
 		public static MACTHEP MACTHEPCHINH { get; set; }
@@ -64,6 +63,11 @@ namespace DATN.Forms
 			txt_Rsdai.Text = d.Rs.ToString();
 			txt_Rscdai.Text = d.Rsc.ToString();
 			txt_Rswdai.Text = d.Rsw.ToString();
+		}
+
+		private void FormMaterial_Load(object sender, EventArgs e)
+		{
+			LoadData();
 		}
 	}
 }
