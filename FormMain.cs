@@ -21,12 +21,12 @@ namespace DATN
 		{
 			this.Close();
 		}
-
+		public static frm_Beam view;
 		private void btn_start_Click(object sender, EventArgs e)
 		{
-			this.Hide();
-			var view = new frm_Beam();
+			view = new frm_Beam();
 			view.ShowDialog();
+			this.Close();
 		}
 	}
 }

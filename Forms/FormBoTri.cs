@@ -169,6 +169,7 @@ namespace DATN.Forms
 		{
 			if (index_tinh != -1)
 			{
+				beams[index_tinh].thep = true;
 				if (cb_1.Checked)
 				{
 					beams[index_tinh].t1 = cbb_1.Text + cbb_t1.Text;

@@ -25,7 +25,7 @@ namespace DATN.ClassUtils
 		public string t7 { get; set; }
 		public string t8 { get; set; }
 		public string t9 { get; set; }
-
+		public bool thep { get; set; } = false;
 		public BeamInfo(IGrouping<dynamic, dynamic> b)
 		{
 			Story = Convert.ToString(b.Select(x => x?.E).First());
