@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.groupBox7 = new System.Windows.Forms.GroupBox();
+			this.btn_luu = new System.Windows.Forms.Button();
 			this.btn_kt = new System.Windows.Forms.Button();
 			this.cb8 = new System.Windows.Forms.CheckBox();
 			this.cb4 = new System.Windows.Forms.CheckBox();
@@ -79,7 +80,6 @@
 			this.lb_A = new System.Windows.Forms.Label();
 			this.lb_B = new System.Windows.Forms.Label();
 			this.lb_C = new System.Windows.Forms.Label();
-			this.btn_luu = new System.Windows.Forms.Button();
 			this.groupBox7.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgv_thep)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -128,6 +128,17 @@
 			this.groupBox7.TabIndex = 3;
 			this.groupBox7.TabStop = false;
 			this.groupBox7.Text = "Bố trí thép";
+			// 
+			// btn_luu
+			// 
+			this.btn_luu.Location = new System.Drawing.Point(142, 26);
+			this.btn_luu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+			this.btn_luu.Name = "btn_luu";
+			this.btn_luu.Size = new System.Drawing.Size(95, 27);
+			this.btn_luu.TabIndex = 3;
+			this.btn_luu.Text = "LƯU";
+			this.btn_luu.UseVisualStyleBackColor = true;
+			this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
 			// 
 			// btn_kt
 			// 
@@ -319,7 +330,8 @@
 			this.cbb_8.FormattingEnabled = true;
 			this.cbb_8.Items.AddRange(new object[] {
             "1",
-            "2"});
+            "2",
+            "3"});
 			this.cbb_8.Location = new System.Drawing.Point(244, 214);
 			this.cbb_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.cbb_8.Name = "cbb_8";
@@ -332,7 +344,8 @@
 			this.cbb_4.FormattingEnabled = true;
 			this.cbb_4.Items.AddRange(new object[] {
             "1",
-            "2"});
+            "2",
+            "3"});
 			this.cbb_4.Location = new System.Drawing.Point(244, 117);
 			this.cbb_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.cbb_4.Name = "cbb_4";
@@ -459,7 +472,8 @@
 			this.cbb_6.FormattingEnabled = true;
 			this.cbb_6.Items.AddRange(new object[] {
             "1",
-            "2"});
+            "2",
+            "3"});
 			this.cbb_6.Location = new System.Drawing.Point(244, 170);
 			this.cbb_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.cbb_6.Name = "cbb_6";
@@ -472,7 +486,8 @@
 			this.cbb_2.FormattingEnabled = true;
 			this.cbb_2.Items.AddRange(new object[] {
             "1",
-            "2"});
+            "2",
+            "3"});
 			this.cbb_2.Location = new System.Drawing.Point(244, 78);
 			this.cbb_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.cbb_2.Name = "cbb_2";
@@ -613,7 +628,7 @@
             this.Column4,
             this.Column5});
 			this.dgv_thep.Location = new System.Drawing.Point(395, 26);
-			this.dgv_thep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.dgv_thep.Margin = new System.Windows.Forms.Padding(4);
 			this.dgv_thep.Name = "dgv_thep";
 			this.dgv_thep.ReadOnly = true;
 			this.dgv_thep.RowHeadersWidth = 51;
@@ -766,17 +781,6 @@
 			this.lb_C.Name = "lb_C";
 			this.lb_C.Size = new System.Drawing.Size(0, 46);
 			this.lb_C.TabIndex = 16;
-			// 
-			// btn_luu
-			// 
-			this.btn_luu.Location = new System.Drawing.Point(142, 26);
-			this.btn_luu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-			this.btn_luu.Name = "btn_luu";
-			this.btn_luu.Size = new System.Drawing.Size(95, 27);
-			this.btn_luu.TabIndex = 3;
-			this.btn_luu.Text = "LƯU";
-			this.btn_luu.UseVisualStyleBackColor = true;
-			this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
 			// 
 			// FormBoTri
 			// 

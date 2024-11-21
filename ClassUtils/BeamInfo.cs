@@ -16,15 +16,15 @@ namespace DATN.ClassUtils
 		public Section SectionA { get; set; }
 		public Section SectionB { get; set; }
 		public Section SectionC { get; set; }
-		public string t1 { get; set; }
-		public string t2 { get; set; }
-		public string t3 { get; set; }
-		public string t4 { get; set; }
-		public string t5 { get; set; }
-		public string t6 { get; set; }
-		public string t7 { get; set; }
-		public string t8 { get; set; }
-		public string t9 { get; set; }
+		public string t1 { get; set; } = "";
+		public string t2 { get; set; } = "";
+		public string t3 { get; set; } = "";
+		public string t4 { get; set; } = "";
+		public string t5 { get; set; } = "";
+		public string t6 { get; set; } = "";
+		public string t7 { get; set; } = "";
+		public string t8 { get; set; } = "";
+		public string t9 { get; set; } = "";
 		public bool thep { get; set; } = false;
 		public BeamInfo(IGrouping<dynamic, dynamic> b)
 		{
